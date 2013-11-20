@@ -3,7 +3,6 @@ class ApplicationController < ActionController::Base
 
   def blob
     response.headers["Access-Control-Allow-Origin"] = "*"
-    render text: '<div class="blob"><p>this is the blog of text from the ' +
-                 'adserver.</p><p>It is HTML!!!!!</p></div>'
+    render layout: false
   end
 end
