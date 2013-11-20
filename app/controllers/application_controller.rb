@@ -1,5 +1,8 @@
 class ApplicationController < ActionController::Base
-  # Prevent CSRF attacks by raising an exception.
-  # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
+
+  def blob
+    render text: '<div class="blob"><p>this is the blog of text from the ' +
+                 'adserver.</p><p>It is HTML!!!!!</p></div>'
+  end
 end

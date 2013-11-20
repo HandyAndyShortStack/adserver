@@ -1,0 +1,2 @@
+rvm use 2.0.0@adserver --create
+cowsay -e^^ -T-- "Today is a good day :)"
